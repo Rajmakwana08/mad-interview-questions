@@ -16,7 +16,9 @@ function App() {
       id: 1,
       question: "1. Explain the Mobility Landscape. Discuss the characteristics and importance of mobile computing.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+      
+      `
     },
     {
       id: 1,
