@@ -7020,10 +7020,915 @@ Proper permission handling improves security and user privacy.
       codeExample: ``
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 111111,
+      question: "Mid questions papaer with answers.",
       answer: "",
-      codeExample: ``
+      codeExample: `
+============================================================
+Q.1 (a) (i)
+Question: What is the purpose of the ObjectAnimator class?
+============================================================
+
+Answer:
+
+ObjectAnimator is an Android class used to create animations
+by changing the properties of an object or View over time.
+
+It can animate properties such as:
+
+1. Alpha
+2. Rotation
+3. Translation
+4. Scale
+
+Example:
+
+ObjectAnimator animator =
+        ObjectAnimator.ofFloat(view, "alpha", 0f, 1f);
+
+animator.setDuration(1000);
+animator.start();
+
+
+In simple words:
+
+ObjectAnimator is used to change View properties smoothly
+to create animations.
+
+
+============================================================
+Q.1 (a) (ii)
+Question: Define "interaction" amongst Activities in Android.
+============================================================
+
+Answer:
+
+Interaction between Activities means communication between
+one Activity and another Activity.
+
+It is mainly done using Intent.
+
+Example:
+
+Intent intent =
+        new Intent(MainActivity.this, SecondActivity.class);
+
+intent.putExtra("name", "Raj");
+
+startActivity(intent);
+
+
+In SecondActivity:
+
+String name =
+        getIntent().getStringExtra("name");
+
+
+In simple words:
+
+Activity interaction allows one Activity to start another
+Activity and transfer data.
+
+
+============================================================
+Q.1 (a) (iii)
+Question: What is the difference between a mobile website
+and a mobile app?
+============================================================
+
+Answer:
+
+Mobile Website:
+- Runs inside a web browser.
+- Usually requires internet.
+- Does not normally require installation.
+- Has limited access to device features.
+
+Mobile App:
+- Installed on the mobile device.
+- Runs as an application.
+- Can work offline for some features.
+- Can access device features such as camera, GPS and sensors.
+
+
+Difference:
+
+Mobile Website              Mobile App
+------------------------------------------------------------
+Runs in browser             Installed on device
+Usually needs internet      Can support offline use
+No installation required    Requires installation
+Limited device access       Better device access
+
+
+============================================================
+Q.1 (b) (i)
+Question: Which method is used to start video playback
+in a VideoView?
+============================================================
+
+Options:
+
+A) play()
+B) start()
+C) resume()
+D) begin()
+
+Answer:
+
+Correct Answer: B) start()
+
+
+Example:
+
+VideoView videoView = findViewById(R.id.videoView);
+
+videoView.start();
+
+
+============================================================
+Q.1 (b) (ii)
+Question: Which method of NotificationManager is used
+to issue a notification?
+============================================================
+
+Options:
+
+A) sendNotification()
+B) postNotification()
+C) issueNotification()
+D) notify()
+
+Answer:
+
+Correct Answer: D) notify()
+
+
+Example:
+
+notificationManager.notify(1, notification);
+
+
+============================================================
+Q.2 (i)
+Question: What is the role of attributes in a custom View,
+and how are they defined?
+============================================================
+
+Answer:
+
+Attributes are used to customize the appearance and
+behavior of a Custom View.
+
+Examples:
+
+1. Text color
+2. Text size
+3. Background color
+4. Border width
+5. Custom shape
+
+
+Step 1: Define attributes in attrs.xml
+
+<declare-styleable name="MyCustomView">
+
+    <attr name="customColor" format="color"/>
+
+    <attr name="customSize" format="dimension"/>
+
+</declare-styleable>
+
+
+Step 2: Use attributes in XML
+
+<com.example.MyCustomView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:customColor="#FF0000"
+    app:customSize="20dp"/>
+
+
+Step 3: Read attributes in Custom View
+
+TypedArray a = context.obtainStyledAttributes(
+        attrs,
+        R.styleable.MyCustomView
+);
+
+int color = a.getColor(
+        R.styleable.MyCustomView_customColor,
+        Color.RED
+);
+
+a.recycle();
+
+
+In simple words:
+
+attrs.xml
+    ↓
+Define custom attributes
+    ↓
+XML
+    ↓
+Set attribute values
+    ↓
+Custom View
+    ↓
+Read and use attributes
+
+
+============================================================
+Q.2 (ii)
+Question: How can animations enhance the user experience
+in mobile UI design?
+============================================================
+
+Answer:
+
+Animations make a mobile application more attractive,
+interactive and easy to understand.
+
+Advantages:
+
+1. Provides smooth transitions between screens.
+
+2. Gives feedback when the user performs an action.
+
+3. Helps the user understand changes in the UI.
+
+4. Makes the application more attractive.
+
+5. Guides the user's attention.
+
+
+Example:
+
+ObjectAnimator animator =
+        ObjectAnimator.ofFloat(
+                button,
+                "scaleX",
+                1f,
+                1.2f
+        );
+
+animator.setDuration(300);
+animator.start();
+
+
+Conclusion:
+
+Animations improve usability, visual feedback and
+overall user experience.
+
+
+============================================================
+Q.2 (iii)
+Question: Explain the process of installing necessary
+libraries or dependencies in your development environment.
+============================================================
+
+Answer:
+
+In Android Studio, libraries and dependencies are generally
+added using the Gradle build system.
+
+Steps:
+
+1. Open the Android project.
+
+2. Open build.gradle or build.gradle.kts.
+
+3. Add the required dependency.
+
+4. Sync the project.
+
+5. Use the library classes in the application.
+
+
+Example:
+
+dependencies {
+
+    implementation(
+        "com.google.android.material:material:..."
+    )
+}
+
+
+Then:
+
+Sync Project with Gradle Files
+
+
+Simple Flow:
+
+Add Dependency
+      ↓
+Sync Gradle
+      ↓
+Library Downloaded
+      ↓
+Use Library in Project
+
+
+============================================================
+Q.2 (iv)
+Question: How can you create an application that reacts
+to ambient light changes using light sensors?
+============================================================
+
+Answer:
+
+Android provides a Light Sensor to measure the amount
+of light present around the device.
+
+Main classes:
+
+1. SensorManager
+2. Sensor
+3. SensorEventListener
+
+
+Steps:
+
+1. Get SensorManager.
+
+2. Get the Light Sensor.
+
+3. Register SensorEventListener.
+
+4. Read the sensor value.
+
+5. Change the application according to the light level.
+
+
+Example:
+
+SensorManager sensorManager;
+
+Sensor lightSensor;
+
+sensorManager =
+        (SensorManager) getSystemService(SENSOR_SERVICE);
+
+lightSensor =
+        sensorManager.getDefaultSensor(
+                Sensor.TYPE_LIGHT
+        );
+
+
+Register Listener:
+
+sensorManager.registerListener(
+        listener,
+        lightSensor,
+        SensorManager.SENSOR_DELAY_NORMAL
+);
+
+
+Read Sensor Value:
+
+@Override
+public void onSensorChanged(SensorEvent event) {
+
+    float light = event.values[0];
+
+    if (light < 50) {
+
+        // Dark environment
+
+    } else {
+
+        // Bright environment
+
+    }
+}
+
+
+Simple Flow:
+
+Light Sensor
+     ↓
+Read Light Value
+     ↓
+Check Value
+     ↓
+Dark / Bright
+     ↓
+Change Application UI
+
+
+============================================================
+Q.2 (v)
+Question: How does the Activity life cycle impact the
+user experience in mobile applications?
+============================================================
+
+Answer:
+
+The Activity Life Cycle controls how an Activity behaves
+during its lifetime.
+
+Main lifecycle methods:
+
+onCreate()
+     ↓
+onStart()
+     ↓
+onResume()
+     ↓
+onPause()
+     ↓
+onStop()
+     ↓
+onDestroy()
+
+
+Impact on User Experience:
+
+1. Saves user data when Activity is paused or stopped.
+
+2. Restores application state when the user returns.
+
+3. Releases resources when they are not required.
+
+4. Reduces unnecessary memory and battery usage.
+
+5. Provides smooth navigation between screens.
+
+
+Example:
+
+User receives phone call:
+
+Activity
+    ↓
+onPause()
+    ↓
+onStop()
+
+
+User returns to application:
+
+onStart()
+    ↓
+onResume()
+
+
+Conclusion:
+
+Proper Activity lifecycle management provides a smooth
+and reliable user experience.
+
+
+============================================================
+Q.2 (vi)
+Question: What are the considerations for designing
+offline functionality in mobile applications?
+============================================================
+
+Answer:
+
+Offline functionality allows an application to work
+even when there is no internet connection.
+
+Important considerations:
+
+1. Local Storage
+
+Store important data locally using SQLite, Room or
+other local storage.
+
+2. Data Synchronization
+
+Synchronize local data with the server when internet
+connection becomes available.
+
+3. Error Handling
+
+Display a proper message when the network is unavailable.
+
+4. Data Consistency
+
+Keep local and server data consistent.
+
+5. Storage Management
+
+Avoid storing unnecessary data because mobile storage
+is limited.
+
+
+Simple Flow:
+
+Internet Available
+        ↓
+     Server
+        ↓
+  Application
+
+
+Internet Not Available
+        ↓
+ Local Database
+        ↓
+  Application
+
+
+Internet Available Again
+        ↓
+ Synchronize Data
+
+
+============================================================
+Q.3 (i)
+Question: Evaluate the importance of handling audio focus
+changes in Android applications. What happens if this is
+not properly managed?
+============================================================
+
+Answer:
+
+Audio Focus determines which application should have
+control over audio output at a particular time.
+
+Example:
+
+Music App
+    ↓
+Playing Music
+    ↓
+Incoming Phone Call
+    ↓
+Audio Focus Changes
+    ↓
+Music Pauses / Reduces Volume
+
+
+Importance of Audio Focus:
+
+1. Prevents multiple applications from playing audio
+   at the same time.
+
+2. Provides better user experience.
+
+3. Allows music to pause during a phone call.
+
+4. Allows temporary reduction of volume.
+
+5. Helps applications share the audio system properly.
+
+
+If Audio Focus is not properly managed:
+
+1. Two applications may play audio simultaneously.
+
+2. Music may continue during phone calls.
+
+3. Audio may become confusing or unpleasant.
+
+4. User experience becomes poor.
+
+5. Application may behave incorrectly.
+
+
+Conclusion:
+
+Proper Audio Focus management provides smooth and
+user-friendly audio behavior.
+
+
+============================================================
+Q.3 (ii)
+Question: Analyze the differences between SharedPreferences
+and SQLite in terms of use cases and data storage capacity.
+============================================================
+
+Answer:
+
+SharedPreferences and SQLite are both used to store
+data locally in Android, but they are used for different
+purposes.
+
+
+SharedPreferences:
+
+Used to store small amounts of simple key-value data.
+
+Examples:
+
+- Username
+- Login status
+- Theme preference
+- Application settings
+- Boolean values
+
+
+Example:
+
+SharedPreferences pref =
+        getSharedPreferences(
+                "MyPref",
+                MODE_PRIVATE
+        );
+
+SharedPreferences.Editor editor =
+        pref.edit();
+
+editor.putString("username", "Raj");
+editor.putBoolean("login", true);
+
+editor.apply();
+
+
+SQLite:
+
+SQLite is a relational database used to store
+structured data.
+
+Examples:
+
+- Student records
+- Products
+- Transactions
+- Contacts
+- Large structured data
+
+
+Example Table:
+
+STUDENT
+--------------------------------
+ID       NAME       COURSE
+--------------------------------
+1        Raj        MCA
+2        Amit       MCA
+--------------------------------
+
+
+Difference:
+
+SharedPreferences       SQLite
+------------------------------------------------
+Small data              Larger structured data
+Key-value storage       Relational database
+Simple data             Complex data
+Easy to use             More complex
+Settings/preferences    Records/tables
+No SQL queries          Supports SQL queries
+
+
+Conclusion:
+
+Use SharedPreferences for small settings and
+key-value data.
+
+Use SQLite for structured records and larger
+amounts of data.
+
+
+============================================================
+Q.3 (iii)
+Question: What tools would you use to prototype a mobile
+app, and how would you implement user feedback?
+============================================================
+
+Answer:
+
+Prototyping means creating a sample design of an
+application before developing the complete application.
+
+
+Tools for Prototyping:
+
+1. Figma
+2. Adobe XD
+3. Sketch
+4. Android Studio
+5. Jetpack Compose
+
+
+Prototyping Process:
+
+Idea
+ ↓
+Wireframe
+ ↓
+UI Design
+ ↓
+Clickable Prototype
+ ↓
+User Testing
+ ↓
+Collect Feedback
+ ↓
+Improve Design
+
+
+Implementing User Feedback:
+
+1. Ask users to test the prototype.
+
+2. Collect feedback using forms or surveys.
+
+3. Observe where users face problems.
+
+4. Identify common problems.
+
+5. Modify the UI according to feedback.
+
+6. Test the improved version again.
+
+
+Example:
+
+User says:
+"Login button is difficult to find."
+
+        ↓
+
+Developer changes:
+Button position / size / visibility
+
+        ↓
+
+Test Again
+
+
+Conclusion:
+
+Prototyping saves development time and helps create
+an application according to user requirements.
+
+
+============================================================
+Q.3 (iv)
+Question: How can you apply motion sensors to detect
+shake events in Android?
+============================================================
+
+Answer:
+
+A smartphone contains motion sensors such as:
+
+1. Accelerometer
+2. Gyroscope
+
+For detecting a shake, the Accelerometer is commonly used.
+
+The accelerometer measures movement along:
+
+X-axis
+Y-axis
+Z-axis
+
+
+Basic Process:
+
+Accelerometer
+      ↓
+Read X, Y, Z values
+      ↓
+Calculate movement
+      ↓
+Compare with threshold
+      ↓
+Movement > Threshold
+      ↓
+Shake Detected
+
+
+Example:
+
+SensorManager sensorManager;
+
+Sensor accelerometer;
+
+sensorManager =
+        (SensorManager) getSystemService(SENSOR_SERVICE);
+
+accelerometer =
+        sensorManager.getDefaultSensor(
+                Sensor.TYPE_ACCELEROMETER
+        );
+
+
+Register Sensor:
+
+sensorManager.registerListener(
+        listener,
+        accelerometer,
+        SensorManager.SENSOR_DELAY_NORMAL
+);
+
+
+Detect Movement:
+
+@Override
+public void onSensorChanged(SensorEvent event) {
+
+    float x = event.values[0];
+    float y = event.values[1];
+    float z = event.values[2];
+
+    float movement =
+            Math.abs(x) +
+            Math.abs(y) +
+            Math.abs(z);
+
+    if (movement > 25) {
+
+        // Shake detected
+
+    }
+}
+
+
+Simple Flow:
+
+User shakes phone
+       ↓
+Accelerometer detects movement
+       ↓
+Movement exceeds threshold
+       ↓
+Shake detected
+       ↓
+Perform an action
+
+
+Example Applications:
+
+Shake Phone
+     ↓
+Refresh Data
+
+OR
+
+Shake Phone
+     ↓
+Perform Some Action
+
+
+Important Point:
+
+The threshold should be selected carefully so that
+normal movement is not incorrectly detected as a shake.
+
+
+============================================================
+QUICK REVISION
+============================================================
+
+ObjectAnimator
+→ Used for property animation.
+
+Activity Interaction
+→ Intent + Data Transfer.
+
+VideoView
+→ start()
+
+NotificationManager
+→ notify()
+
+Custom View Attributes
+→ attrs.xml + obtainStyledAttributes()
+
+Animation
+→ Smooth UI + User Feedback.
+
+Dependencies
+→ Gradle.
+
+Light Sensor
+→ SensorManager + TYPE_LIGHT.
+
+Activity Lifecycle
+→ onCreate → onStart → onResume
+→ onPause → onStop → onDestroy.
+
+Offline Functionality
+→ Local Storage + Synchronization.
+
+Audio Focus
+→ Controls audio between applications.
+
+SharedPreferences
+→ Small key-value data.
+
+SQLite
+→ Structured database data.
+
+Prototyping
+→ Figma / Adobe XD / Android Studio.
+
+Shake Detection
+→ Accelerometer + Threshold.
+============================================================
+      
+      `
     },
     {
       id: 1,
