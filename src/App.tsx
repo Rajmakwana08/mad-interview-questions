@@ -7937,222 +7937,1666 @@ Shake Detection
       codeExample: ``
     },
     {
-      id: 1,
-      question: "1. ",
+      id: 31,
+      question: "31. What is Debugging in Mobile Apps? Explain the debugging process and tools used for debugging Android applications. -> Logcat, Breakpoints, Debugger",
       answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
-    {
-      id: 1,
-      question: "1. ",
-      answer: "",
-      codeExample: ``
-    },
+      codeExample: `
+What is Debugging in Mobile Apps?
 
+What is Debugging?
+
+Debugging is the process of finding, analyzing, and fixing errors (bugs)
+in a mobile application.
+
+Bugs may cause:
+
+- Application crashes
+- Incorrect output
+- Slow performance
+- UI problems
+- Unexpected behavior
+
+Definition (2 Marks)
+
+Debugging is the systematic process of identifying, analyzing, and correcting
+errors in an Android application.
+
+
+Debugging Process
+
+The basic debugging process is:
+
+Run Android App
+      │
+      ▼
+Find the Problem
+      │
+      ▼
+Reproduce the Error
+      │
+      ▼
+Analyze the Code
+      │
+      ▼
+Use Debugging Tools
+      │
+      ▼
+Find the Cause
+      │
+      ▼
+Fix the Error
+      │
+      ▼
+Test Again
+      │
+      ▼
+Problem Solved
+
+
+Step 1: Identify the Problem
+
+First, observe the application's behavior and identify what is going wrong.
+Example: The app crashes when the Login button is clicked.
+
+
+Step 2: Reproduce the Problem
+
+Perform the same steps again to confirm that the problem can be reproduced.
+
+
+Step 3: Analyze the Code
+
+Check the code related to the problem and look for errors.
+
+
+Step 4: Use Debugging Tools
+
+Use Logcat, Breakpoints, and Debugger to understand what is happening
+inside the application.
+
+
+Step 5: Fix the Error
+
+Correct the problematic code.
+
+
+Step 6: Test Again
+
+Run the application again and verify that the problem has been solved.
+
+
+Tools Used for Debugging Android Applications
+
+The three important debugging tools are:
+
+1. Logcat
+2. Breakpoints
+3. Debugger
+
+
+1. Logcat
+
+What is Logcat?
+
+Logcat is a tool in Android Studio that displays system messages,
+application logs, warnings, errors, and exceptions.
+
+It is very useful for finding runtime problems.
+
+Example:
+
+Log.d("Login", "Login button clicked");
+
+Logcat may show:
+
+D/Login: Login button clicked
+
+
+Different Log Levels
+
+Level       Method      Purpose
+
+Debug       Log.d()     Debugging information
+Info        Log.i()     General information
+Warning     Log.w()     Warning messages
+Error       Log.e()     Error messages
+
+
+Example:
+
+Log.d("APP", "Value = " + value);
+
+Log.e("APP", "Database connection failed");
+
+
+Uses of Logcat
+
+- Find runtime errors.
+- View exception messages.
+- Check variable values.
+- Track application execution.
+- Identify crashes.
+
+
+2. Breakpoints
+
+What is a Breakpoint?
+
+A Breakpoint is a marker placed on a line of code where program execution
+should pause during debugging.
+
+It allows us to examine what is happening at that exact point.
+
+Example:
+
+int a = 10;
+int b = 20;
+
+int sum = a + b;  // Breakpoint here
+
+System.out.println(sum);
+
+When the program reaches the breakpoint, execution pauses.
+
+We can then check:
+
+a = 10
+b = 20
+sum = 30
+
+
+Uses of Breakpoints
+
+- Pause program execution.
+- Check variable values.
+- Find logical errors.
+- Execute code step-by-step.
+- Understand program flow.
+
+
+3. Debugger
+
+What is a Debugger?
+
+The Debugger is a tool in Android Studio that allows developers to
+control and examine the execution of an application.
+
+It works together with breakpoints.
+
+When execution pauses at a breakpoint, the debugger can show:
+
+- Variable values
+- Call stack
+- Current line
+- Program flow
+- Object information
+
+
+Common Debugger Controls
+
+Resume        → Continue execution
+Step Over     → Execute current line
+Step Into     → Enter a method
+Step Out      → Exit current method
+Stop          → Stop debugging
+
+
+Example of Debugging
+
+Suppose we have:
+
+int a = 10;
+int b = 0;
+
+int result = a / b;
+
+The application may crash because division by zero is invalid.
+
+
+Debugging Process
+
+Application Crash
+       │
+       ▼
+Check Logcat
+       │
+       ▼
+Find ArithmeticException
+       │
+       ▼
+Set Breakpoint
+       │
+       ▼
+Check a and b
+       │
+       ▼
+b = 0
+       │
+       ▼
+Find the Problem
+       │
+       ▼
+Fix the Code
+
+
+For example:
+
+if (b != 0) {
+    int result = a / b;
+}
+
+
+Logcat vs Breakpoint vs Debugger
+
+Tool          Main Purpose
+
+Logcat        Displays logs, errors, warnings, and exceptions
+
+Breakpoint    Pauses execution at a selected line
+
+Debugger      Examines and controls program execution
+
+
+Advantages of Debugging
+
+- Finds errors quickly.
+- Improves application reliability.
+- Helps understand program execution.
+- Makes code easier to maintain.
+- Reduces application crashes.
+- Helps verify variable values and program logic.
+
+
+Exam Definition (2 Marks)
+
+Debugging is the process of finding and fixing errors in a mobile
+application.
+
+In Android Studio, important debugging tools include Logcat, which
+displays logs and errors; Breakpoints, which pause execution at a
+specific line; and the Debugger, which allows developers to inspect
+and control program execution.
+
+
+5-Mark Summary
+
+1. Identify the problem.
+2. Reproduce the error.
+3. Analyze the code.
+4. Use Logcat to check errors and logs.
+5. Use Breakpoints to pause execution.
+6. Use the Debugger to inspect variables and program flow.
+7. Fix and test the application again.
+      
+      `
+    },
+    {
+      id: 32,
+      question: "32. Explain White Box Testing and Black Box Testing. Differentiate between them.",
+      answer: "",
+      codeExample: `
+White Box Testing and Black Box Testing
+
+
+1. What is Software Testing?
+
+Software Testing is the process of checking an application to find errors,
+bugs, and incorrect behavior and to make sure the software works as expected.
+
+There are two common testing approaches:
+
+1. White Box Testing
+2. Black Box Testing
+
+
+2. White Box Testing
+
+Definition
+
+White Box Testing is a testing technique in which the tester knows and
+examines the internal code, logic, structure, and working of the program.
+
+It is also called:
+
+- Structural Testing
+- Glass Box Testing
+- Clear Box Testing
+
+
+Example
+
+Suppose we have:
+
+if (age >= 18) {
+    System.out.println("Eligible");
+} else {
+    System.out.println("Not Eligible");
+}
+
+In White Box Testing, the tester checks both paths:
+
+          age >= 18?
+           /      \
+        Yes        No
+         |          |
+     Eligible    Not Eligible
+
+The tester makes sure that both branches of the code are executed and tested.
+
+
+Techniques
+
+- Statement Coverage – checks whether every statement is executed.
+- Branch Coverage – checks whether every decision branch is tested.
+- Path Coverage – checks different execution paths.
+- Condition Coverage – checks individual conditions.
+
+
+Advantages
+
+- Finds errors in internal logic.
+- Tests individual code paths.
+- Helps identify unreachable code.
+- Provides good code coverage.
+- Useful for developers.
+
+
+Disadvantages
+
+- Requires programming knowledge.
+- Can be time-consuming for large applications.
+- May not find missing requirements or incorrect UI behavior.
+
+
+3. Black Box Testing
+
+Definition
+
+Black Box Testing is a testing technique in which the tester checks the
+functionality of the application without knowing its internal code or
+implementation.
+
+The tester focuses on:
+
+Input → Application → Output
+
+
+Example
+
+Suppose an application has a login screen:
+
+Username: Raj
+Password: 1234
+       ↓
+    Login
+       ↓
+   Application
+       ↓
+Login Successful
+
+The tester checks:
+
+- Correct username + password → Login successful
+- Wrong username + password → Error message
+- Empty username → Validation message
+- Empty password → Validation message
+
+The tester does not need to know how the login code is written.
+
+
+Techniques
+
+- Equivalence Partitioning
+- Boundary Value Analysis
+- Decision Table Testing
+- State Transition Testing
+- Use Case Testing
+
+
+Advantages
+
+- Does not require programming knowledge.
+- Tests the application from the user's point of view.
+- Useful for testing requirements and functionality.
+- Can identify missing or incorrect functionality.
+
+
+Disadvantages
+
+- Internal code paths may remain untested.
+- Difficult to achieve complete code coverage.
+- Some hidden errors may not be detected.
+
+
+4. Difference Between White Box and Black Box Testing
+
+White Box Testing                    Black Box Testing
+
+Internal code is known.              Internal code is not known.
+
+Tests code structure and logic.      Tests functionality and behavior.
+
+Usually performed by developers.     Can be performed by testers.
+
+Requires programming knowledge.      Usually does not require programming
+                                     knowledge.
+
+Focuses on how the system works.     Focuses on what the system does.
+
+Uses statement, branch, and           Uses equivalence partitioning,
+path coverage.                        boundary value, etc.
+
+Code is directly examined.            Code is treated as a "black box".
+
+Finds logic and coding errors.        Finds functional and requirement
+                                     errors.
+      
+      `
+    },
+    {
+      id: 33,
+      question: "33. Explain Test Automation of Mobile Applications. What are its advantages?",
+      answer: "",
+      codeExample: `
+Test Automation of Mobile Applications
+
+
+1. What is Test Automation?
+
+Test Automation is the process of using software tools and scripts to
+automatically test a mobile application instead of performing all tests
+manually.
+
+In mobile application testing, automated tests can check:
+
+- User interface (UI)
+- Buttons and menus
+- Login and registration
+- Navigation
+- API and database operations
+- Different screen sizes
+- Performance
+- Application functionality
+
+
+Simple Example
+
+Suppose a mobile app has a login screen.
+
+Manual Testing:
+
+Open App
+   ↓
+Enter Username
+   ↓
+Enter Password
+   ↓
+Click Login
+   ↓
+Check Result
+
+
+Automated Testing:
+
+Test Script
+    ↓
+Opens App
+    ↓
+Enters Username
+    ↓
+Enters Password
+    ↓
+Clicks Login
+    ↓
+Checks Result Automatically
+
+
+2. How Test Automation Works
+
+The general process is:
+
+Test Cases
+    ↓
+Write Automation Script
+    ↓
+Select Device / Emulator
+    ↓
+Run Test
+    ↓
+Application Performs Actions
+    ↓
+Compare Actual Result
+       with
+Expected Result
+    ↓
+Pass / Fail Report
+
+
+Example
+
+Suppose the expected result is:
+
+Username = Raj
+Password = 1234
+Expected → Login Successful
+
+The automation tool performs these actions automatically and checks whether
+the actual result is Login Successful.
+
+
+3. Tools Used for Mobile Test Automation
+
+Some commonly used tools are:
+
+
+1. Appium
+
+Appium is a popular open-source tool used to automate testing of mobile
+applications.
+
+It supports:
+
+- Android
+- iOS
+- Native apps
+- Hybrid apps
+- Mobile web applications
+
+
+2. Espresso
+
+Espresso is an Android UI testing framework used for testing Android
+applications.
+
+It is useful for testing:
+
+- Buttons
+- Text fields
+- Lists
+- Screen navigation
+
+
+3. XCUITest
+
+XCUITest is Apple's framework for automated UI testing of iOS applications.
+
+
+Exam Definition — 2 Marks
+
+Test Automation of Mobile Applications is the process of using automation
+tools and scripts to automatically execute test cases and verify the
+functionality, performance, and behavior of a mobile application.
+
+
+5-Mark Summary
+
+Test Automation = Automated execution of mobile app test cases.
+
+Main steps:
+
+Identify Test Cases → Create Scripts → Select Device → Execute Tests
+→ Check Results → Fix & Retest
+
+
+Main advantages:
+
+✓ Saves time
+✓ Reduces human errors
+✓ Reusable tests
+✓ Faster regression testing
+✓ Better device coverage
+✓ Automatic reports
+✓ Supports continuous testing
+      
+      `
+    },
+    {
+      id: 34,
+      question: "34. Explain JUnit for Android. How is JUnit used for testing Android applications?",
+      answer: "",
+      codeExample: `
+JUnit for Android
+
+
+1. What is JUnit?
+
+JUnit is a Java-based unit testing framework used to test small parts of an
+application, such as methods, classes, and business logic.
+
+In Android development, JUnit is commonly used to check whether individual
+methods are producing the correct output for given inputs.
+
+
+Simple Example
+
+Suppose we have:
+
+public int add(int a, int b) {
+    return a + b;
+}
+
+We can use JUnit to check:
+
+Input:           10, 20
+Expected Output: 30
+Actual Output:   30
+Result:          PASS
+
+
+2. Why is JUnit Used in Android?
+
+JUnit helps developers test application logic before or during development.
+
+It can be used to test:
+
+- Mathematical calculations
+- String operations
+- Validation logic
+- Business logic
+- Data processing
+- Utility methods
+- ViewModel-related logic
+
+For example, if an application calculates attendance:
+
+Total Classes = 100
+Attended      = 80
+
+Expected Attendance = 80%
+
+JUnit can automatically check whether the calculation gives 80%.
+
+
+3. Types of Android Tests Related to JUnit
+
+
+1. Local Unit Tests
+
+These tests run on the development computer/JVM and are generally placed in:
+
+app/src/test/
+
+They are suitable for testing logic that does not require an Android device.
+
+Example:
+
+@Test
+public void additionTest() {
+    int result = 10 + 20;
+
+    assertEquals(30, result);
+}
+
+
+2. Instrumented Tests
+
+These tests run on an Android device or emulator and are generally placed in:
+
+app/src/androidTest/
+
+They are useful when the test needs Android framework components or
+UI/device interaction.
+
+
+4. Important JUnit Annotations
+
+JUnit provides annotations to identify test methods.
+
+
+@Test
+
+Used to indicate that a method is a test method.
+
+@Test
+public void additionTest() {
+    assertEquals(30, 10 + 20);
+}
+
+
+@Before
+
+Runs before each test.
+
+@Before
+public void setUp() {
+    // Initialize required objects
+}
+
+
+@After
+
+Runs after each test.
+
+@After
+public void tearDown() {
+    // Clean up
+}
+
+
+5. Important JUnit Methods
+
+JUnit provides assertion methods to compare the expected result with the
+actual result.
+
+
+assertEquals()
+
+Checks whether two values are equal.
+
+assertEquals(30, 10 + 20);
+
+Expected = 30
+Actual   = 30
+
+Result → PASS
+
+
+assertTrue()
+
+Checks whether a condition is true.
+
+assertTrue(10 > 5);
+
+
+assertFalse()
+
+Checks whether a condition is false.
+
+assertFalse(5 > 10);
+
+
+assertNotNull()
+
+Checks that an object is not null.
+
+assertNotNull(user);
+      `
+    },
+    {
+      id: 35,
+      question: "35. Explain Robotium framework for Android application testing. Explain MonkeyTalk. What is it used for in mobile app testing?",
+      answer: "",
+      codeExample: `
+Robotium Framework and MonkeyTalk
+
+
+Both Robotium and MonkeyTalk are tools/frameworks used for automating mobile
+application testing, especially Android applications.
+
+
+1. Robotium Framework for Android Testing
+
+Definition
+
+Robotium is an open-source Android UI testing framework used to automate
+testing of Android applications.
+
+It allows testers to interact with application components such as:
+
+- Buttons
+- Text fields
+- Menus
+- Checkboxes
+- Activities
+- Dialog boxes
+
+Robotium can perform actions like clicking, entering text, scrolling, and
+checking displayed text.
+
+
+Simple Working
+
+Android Application
+        ↓
+   Robotium Test
+        ↓
+Click / Enter Text / Scroll
+        ↓
+Check Expected Result
+        ↓
+     PASS / FAIL
+
+
+2. MonkeyTalk
+
+Definition
+
+MonkeyTalk was a mobile application testing and automation tool used to
+record and replay user actions on mobile applications.
+
+It was designed to make mobile UI testing easier, including testing
+workflows such as:
+
+- Login
+- Navigation
+- Button clicks
+- Form entry
+- Screen interactions
+
+
+Simple Working
+
+User performs actions
+        ↓
+MonkeyTalk records actions
+        ↓
+Test Script
+        ↓
+Replay automatically
+        ↓
+Check Result
+
+
+Example of MonkeyTalk
+
+Suppose a user performs:
+
+Open App
+   ↓
+Click Login
+   ↓
+Enter Username
+   ↓
+Enter Password
+   ↓
+Click Submit
+
+MonkeyTalk can record these actions and later replay them automatically.
+
+This is useful for repeated testing.
+
+
+4. Robotium vs MonkeyTalk
+
+Robotium                              MonkeyTalk
+
+Android UI testing framework.         Mobile UI automation tool.
+
+Mainly associated with Android       Designed for mobile application
+application testing.                 automation.
+
+Tests are generally written as        Supports recording and replaying
+test code.                            actions.
+
+Provides programmatic control of     Focuses strongly on user-action
+UI components.                        automation.
+
+Useful for automated Android UI      Useful for functional and regression
+testing.                              testing.
+
+
+5-Mark Summary
+
+Robotium
+   ↓
+Android UI Testing
+   ↓
+Automates UI Actions
+   ↓
+Checks Application Behavior
+
+
+MonkeyTalk
+   ↓
+Record User Actions
+   ↓
+Create Test
+   ↓
+Replay Automatically
+   ↓
+Check Result
+
+
+In short:
+
+Robotium = Android UI testing framework
+MonkeyTalk = Record-and-replay mobile testing tool
+      `
+    },
+    {
+      id: 41,
+      question: "41. Explain Versioning, Signing and Packaging of Mobile Applications.",
+      answer: "",
+      codeExample: `
+Versioning, Signing and Packaging of Mobile Applications
+
+
+When a mobile application is ready for testing or publishing, it needs to be
+versioned, signed, and packaged properly.
+
+These three steps help identify app releases, verify the app's authenticity,
+and prepare the app for installation/distribution.
+
+
+1. Versioning
+
+Definition
+
+Versioning is the process of assigning a version number to different releases
+of a mobile application.
+
+For example:
+
+Version 1.0 → First Release
+Version 1.1 → Bug Fixes
+Version 2.0 → Major New Features
+
+In Android, two important version values are commonly used:
+
+
+versionCode
+
+- An internal version number.
+- Used to identify different releases.
+- It should increase when a new version is published.
+
+Example:
+
+versionCode = 1
+versionCode = 2
+versionCode = 3
+
+
+versionName
+
+- A user-visible version name.
+- Example:
+
+versionName = "1.0"
+versionName = "1.1"
+versionName = "2.0"
+
+
+Example
+
+App Name: MyApp
+
+versionCode = 5
+versionName = "2.1"
+
+Here:
+
+- 5 identifies the release internally.
+- 2.1 is the version shown to users.
+
+
+2. Signing
+
+Definition
+
+Signing is the process of digitally signing a mobile application using a
+digital certificate/key.
+
+For Android, an application is signed using a keystore and signing key.
+
+
+Why is signing required?
+
+Signing helps:
+
+- Identify the developer/app publisher.
+- Verify that the application has not been modified.
+- Establish trust between application updates.
+- Allow Android/app stores to verify the application.
+
+
+Simple Process
+
+Android App
+     ↓
+Build APK/AAB
+     ↓
+Digital Signing Key
+     ↓
+Signed Application
+     ↓
+Distribution / Installation
+
+
+Debug vs Release Signing
+
+Debug build:
+
+- Used during development and testing.
+- Usually signed automatically with a debug key.
+
+Release build:
+
+- Used for distribution/publishing.
+- Should be signed with the developer's release signing key.
+
+The release signing key must be protected carefully because it is important
+for future application updates.
+
+
+3. Packaging
+
+Definition
+
+Packaging is the process of combining the application code, resources,
+assets, configuration, and other required files into a distributable
+application package.
+
+For Android, common package formats are:
+
+
+APK
+
+APK (Android Package) is an installable Android application package.
+
+Example:
+
+MyApp.apk
+
+It can be installed on compatible Android devices.
+
+
+AAB
+
+AAB (Android App Bundle) is a publishing format used to upload an Android
+application to Google Play.
+
+Example:
+
+MyApp.aab
+
+The app store can use the bundle to generate optimized APKs for different
+devices.
+
+
+Difference Between Versioning, Signing and Packaging
+
+Versioning                              Signing
+
+Identifies app releases.                Verifies app authenticity and integrity.
+
+Uses versionCode and versionName.       Uses a digital signing key/certificate.
+
+Helps manage app updates.               Helps establish trust and secure updates.
+
+Example: 1.0, 1.1, 2.0.                Example: Release keystore/key.
+
+
+Packaging
+
+Creates a distributable app package.
+
+Produces APK or AAB.
+
+Helps distribute/install the app.
+
+Example: .apk, .aab.
+
+
+Exam Definition — 2 Marks
+
+Versioning is the process of assigning version numbers to different releases
+of a mobile application.
+
+Signing is the process of digitally signing an application to verify its
+authenticity and integrity.
+
+Packaging is the process of combining application code and resources into a
+distributable format such as APK or AAB.
+      
+      `
+    },
+    {
+      id: 42,
+      question: "42. Explain the process of distributing mobile applications on a mobile marketplace.",
+      answer: "",
+      codeExample: `
+Distribution of Mobile Applications on a Mobile Marketplace
+
+1. What is Mobile App Distribution?
+
+Mobile application distribution is the process of making a mobile
+application available to users through an official mobile marketplace
+or app store.
+
+Examples:
+
+- Google Play Store → Android applications
+- Apple App Store → iOS applications
+
+The developer prepares the app, creates a store listing, submits it
+for review, and after approval, users can download and install it.
+
+
+2. Process of Distributing a Mobile Application
+
+The general process is:
+
+Develop Application
+       ↓
+Test Application
+       ↓
+Version the Application
+       ↓
+Sign the Application
+       ↓
+Create APK / AAB / iOS Package
+       ↓
+Create Developer Account
+       ↓
+Create App Store Listing
+       ↓
+Upload Application
+       ↓
+Submit for Review
+       ↓
+Marketplace Approval
+       ↓
+Publish Application
+       ↓
+Users Download & Install
+
+
+Step 1: Develop the Application
+
+First, the developer creates the mobile application.
+
+Example:
+
+Food Delivery App
+     ↓
+Login
+Menu
+Cart
+Payment
+Order Tracking
+
+
+Step 2: Test the Application
+
+The application is tested to find bugs and verify that all features
+work correctly.
+
+Testing may include:
+
+- Functional testing
+- UI testing
+- Performance testing
+- Security testing
+- Compatibility testing
+
+
+Step 3: Version the Application
+
+A version number is assigned to the application.
+
+For Android:
+
+versionCode = 1
+versionName = "1.0"
+
+For a later update:
+
+versionCode = 2
+versionName = "1.1"
+
+
+Step 4: Sign the Application
+
+The application is digitally signed using the appropriate signing
+key/certificate.
+
+Signing helps establish the application's identity and integrity.
+
+For Android, release applications are signed before distribution.
+
+
+Step 5: Create the Application Package
+
+The application is built into a format suitable for distribution.
+
+For Android:
+
+APK → Android application package
+AAB → Android App Bundle
+
+For iOS, the application is prepared for distribution through
+Apple's ecosystem.
+
+
+3. Create Developer Account
+
+The developer needs an account with the relevant marketplace.
+
+For example:
+
+Android → Google Play Console
+iOS     → App Store Connect
+
+The developer provides the required account and developer information.
+
+
+4. Create App Store Listing
+
+The developer provides information about the application, such as:
+
+- Application name
+- Application description
+- Application icon
+- Screenshots
+- Category
+- Content rating
+- Privacy information
+- Support/contact information
+
+Example:
+
+App Name: Food Delivery
+Category: Food & Drink
+
+Description:
+Order food from nearby restaurants.
+
+
+5. Upload the Application
+
+The developer uploads the prepared application package to the
+marketplace.
+
+For example:
+
+Android
+   ↓
+Upload AAB
+   ↓
+Google Play Console
+
+The developer also provides the required release information.
+
+
+6. Marketplace Review
+
+The marketplace checks the application before making it publicly
+available.
+
+The review can include checks related to:
+
+- Functionality
+- Security
+- Privacy
+- Content
+- Marketplace policies
+- Required declarations
+
+If problems are found, the developer may need to fix them and submit
+the application again.
+
+
+7. Publish the Application
+
+After the application is approved, it can be published on the
+marketplace.
+
+Approved
+   ↓
+Published
+   ↓
+Users can find the application
+   ↓
+Download / Install
+
+The developer may also choose appropriate availability, pricing,
+and release options supported by the marketplace.
+
+
+Distribution Process:
+
+Develop → Test → Version → Sign → Package → Create Developer Account
+→ Create Store Listing → Upload → Review → Approval → Publish
+→ Update
+
+
+Main Marketplaces
+
+Android                         iOS
+------------------------------------------------------------
+Google Play Store               Apple App Store
+Google Play Console             App Store Connect
+APK / AAB                       iOS distribution package
+
+
+In short:
+
+The application is developed and tested, then versioned, signed,
+packaged, uploaded to the marketplace, reviewed for compliance,
+and finally published for users.
+      
+      `
+    },
+    {
+      id: 43,
+      question: "43. What are Wireless Markup Languages? Explain their need and features.",
+      answer: "",
+      codeExample: `
+Wireless Markup Languages (WML)
+
+1. What is Wireless Markup Language?
+
+Wireless Markup Language (WML) is a markup language designed for
+creating web pages and applications for wireless/mobile devices,
+especially older mobile phones with limited screen size, memory,
+processing power, and network speed.
+
+WML was mainly used with WAP (Wireless Application Protocol).
+
+Definition:
+
+WML is an XML-based markup language used to create content for
+mobile and wireless devices through WAP.
+
+It is similar in concept to HTML, but it was designed for the
+limitations of early mobile devices.
+
+
+2. Why is WML Needed?
+
+Older mobile phones had several limitations:
+
+- Small screens
+- Limited memory
+- Low processing power
+- Slow wireless networks
+- Limited input methods
+- Limited storage
+
+Therefore, normal desktop web pages were not suitable for these
+devices.
+
+WML was designed to provide small, simple, and mobile-friendly
+content.
+
+Simple idea:
+
+Desktop Web
+    ↓
+HTML
+    ↓
+Large Screen + Powerful Device
+
+
+Mobile Web
+    ↓
+WML
+    ↓
+Small Screen + Limited Device
+
+
+3. Need for WML
+
+1. Support Small Screens
+
+WML allows content to be designed for small mobile displays.
+
+2. Reduce Data Usage
+
+WML pages were designed to keep content relatively small, which
+was useful with slow wireless networks.
+
+3. Support Limited Devices
+
+It was suitable for mobile devices with limited:
+
+- Memory
+- CPU power
+- Storage
+
+4. Mobile Navigation
+
+WML provides mechanisms for navigating between different mobile
+pages/cards.
+
+5. Wireless Access
+
+It was used to provide services such as:
+
+- News
+- Weather
+- Banking information
+- Stock information
+- Mobile searches
+
+
+4. Features of WML
+
+1. XML-Based
+
+WML is based on XML, so it follows structured markup rules.
+
+Example:
+
+<wml>
+   <card>
+      <p>Hello Mobile User</p>
+   </card>
+</wml>
+
+
+2. Designed for Mobile Devices
+
+WML was specifically designed for devices with small screens and
+limited resources.
+
+
+3. Card and Deck Structure
+
+This is one of the important concepts of WML.
+
+A Deck contains one or more Cards.
+
+WML Deck
+   |
+   +--- Card 1
+   |
+   +--- Card 2
+   |
+   +--- Card 3
+
+A card represents a single unit of interaction or screen content.
+
+
+4. Supports Navigation
+
+Users can move from one card to another.
+
+Card 1
+  ↓
+Card 2
+  ↓
+Card 3
+
+
+5. Supports User Input
+
+WML can provide input elements such as:
+
+- Text input
+- Selection
+- Buttons/actions
+
+
+6. Supports Basic Formatting
+
+WML provides basic elements for displaying and formatting text.
+
+Example:
+
+<p>Welcome to Mobile Website</p>
+
+
+7. Supports Links
+
+Users can navigate to other cards or resources.
+
+Example:
+
+<a href="#card2">Next</a>
+
+
+Wireless Markup Language (WML) is an XML-based markup language
+designed for creating web content and applications for wireless
+and mobile devices, particularly those using WAP.
+
+
+5-Mark Summary
+
+WML = Wireless Markup Language
+
+Need:
+
+- Small mobile screens
+- Low bandwidth
+- Limited memory
+- Limited processing power
+- Mobile-friendly content
+
+Features:
+
+- XML-based
+- Card and Deck structure
+- Mobile-oriented
+- Supports navigation
+- Supports user input
+- Supports links
+- Suitable for low-bandwidth networks
+
+WML
+ ↓
+Deck
+ ↓
+Cards
+ ↓
+Mobile Content
+      
+      `
+    },
+    {
+      id: 44,
+      question: "44. Explain HDML, WML, HTML, cHTML, XHTML and VoiceXML.",
+      answer: "",
+      codeExample: `
+Difference Between HDML, WML, HTML, cHTML, XHTML and VoiceXML
+
+These are different markup languages developed for different types
+of devices and applications.
+
+
+1. Basic Meaning
+
+- HDML → Handheld Device Markup Language
+- WML → Wireless Markup Language
+- HTML → HyperText Markup Language
+- cHTML → Compact HTML
+- XHTML → Extensible HyperText Markup Language
+- VoiceXML → Voice Extensible Markup Language
+
+
+2. Comparison
+
+HDML
+- Designed for early handheld devices.
+- Developed by Unwired Planet.
+- Mainly used in early mobile phones.
+- Provides text-based mobile content.
+- Supports simple navigation.
+- Legacy technology.
+
+WML
+- Designed for wireless/mobile devices.
+- Developed for WAP.
+- Used in WAP-enabled phones.
+- Provides text and simple mobile interaction.
+- Uses Card and Deck structure.
+- Legacy technology.
+
+HTML
+- Designed for general web pages.
+- Standard language of the Web.
+- Used on websites and browsers.
+- Supports rich web content.
+- Uses web pages/documents.
+- Still widely used.
+
+cHTML
+- Designed for small mobile/limited devices.
+- Developed by NTT DoCoMo.
+- Used mainly with i-mode mobile services.
+- Provides simplified HTML.
+- Uses simplified tags and features.
+- Mostly legacy technology.
+
+XHTML
+- XML-based version of HTML.
+- Combines HTML with XML rules.
+- Used for structured web documents.
+- Provides structured and strict web content.
+- Uses XML syntax.
+- Used in web/XML-based applications.
+
+VoiceXML
+- Designed for voice-based applications.
+- Used for voice interaction.
+- Used in voice portals and IVR systems.
+- Provides voice/audio-based interaction.
+- Uses dialogs and voice input/output.
+- Used for voice applications.
+
+
+Comparison Table
+
+Feature              HDML                  WML
+------------------------------------------------------------
+Full Form            Handheld Device      Wireless Markup
+                     Markup Language      Language
+Purpose              Early handheld       Wireless/mobile
+                     devices              devices
+Technology            Legacy               Legacy
+Structure             Simple content       Card and Deck
+
+
+Feature              HTML                  cHTML
+------------------------------------------------------------
+Full Form            HyperText Markup      Compact HTML
+                     Language
+Purpose              General web pages     Compact mobile web
+                                             content
+Technology            Widely used           Mostly legacy
+Structure             Web pages/documents   Simplified HTML
+
+
+Feature              XHTML                 VoiceXML
+------------------------------------------------------------
+Full Form            Extensible            Voice Extensible
+                     HyperText Markup      Markup Language
+                     Language
+Purpose              Structured web        Voice-based
+                     documents             applications
+Technology            XML-based             Voice interaction
+Structure             XML syntax            Dialogs and voice
+                                           input/output
+
+
+Exam Definition — 2 Marks
+
+HDML, WML, HTML, cHTML, XHTML, and VoiceXML are markup languages
+designed for different environments.
+
+HDML and WML were developed for early mobile/wireless devices,
+HTML for general web pages, cHTML for compact mobile web content,
+XHTML for XML-based web documents, and VoiceXML for voice-based
+applications.
+      `
+    },
+    {
+      id: 1,
+      question: "1. ",
+      answer: "",
+      codeExample: ``
+    },
   ];
 
   const toggleQuestion = (id: number) => {
